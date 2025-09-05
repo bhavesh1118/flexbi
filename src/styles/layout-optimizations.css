@@ -1,0 +1,103 @@
+/* Performance optimizations for FlexBI Layout */
+
+/* Enable hardware acceleration for smooth animations */
+.layout-optimized {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Optimized sidebar transitions */
+.sidebar-transition {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Smooth navigation item hover effects */
+.nav-item-optimized {
+  will-change: transform, background-color;
+  transition: all 0.15s ease-out;
+}
+
+.nav-item-optimized:hover {
+  transform: translateZ(0) scale(1.02);
+}
+
+.nav-item-optimized.active {
+  transform: translateZ(0) scale(0.98);
+}
+
+/* Optimized content transitions */
+.content-transition {
+  will-change: opacity;
+  transition: opacity 0.2s ease-out;
+}
+
+/* Loading spinner optimization */
+.loading-spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .nav-item-optimized,
+  .sidebar-transition,
+  .content-transition {
+    transition: none;
+    animation: none;
+  }
+  
+  .nav-item-optimized:hover,
+  .nav-item-optimized.active {
+    transform: none;
+  }
+}
+
+/* Mobile performance optimizations */
+@media (max-width: 1024px) {
+  .sidebar-transition {
+    transition-duration: 0.2s;
+  }
+  
+  .content-transition {
+    transition-duration: 0.15s;
+  }
+}
+
+/* Focus optimizations for accessibility */
+.nav-item-optimized:focus {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+}
+
+/* Scrollbar optimizations */
+.optimized-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+.optimized-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.optimized-scroll::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.optimized-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.optimized-scroll::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

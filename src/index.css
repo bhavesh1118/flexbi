@@ -2,15 +2,97 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Performance optimizations included directly */
+.nav-item-optimized {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+.sidebar-transition {
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.optimized-scroll {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.transform-gpu {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
 :root {
   font-family: 'Inter', sans-serif;
   color-scheme: light;
 }
 
-body {
+html, body {
+  height: 100%;
   margin: 0;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  border: none;
+  outline: none;
+  /* Enable GPU acceleration globally */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  /* Optimize rendering performance */
+  contain: layout style paint;
+}
+
+/* Prevent any default margins/padding on layout elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset all default browser styles that could add spacing */
+body, html {
+  overflow-x: hidden;
+  background-color: #f9fafb; /* gray-50 to match the layout */
+  min-height: 100vh;
+  height: 100vh;
+}
+
+/* Ensure React root takes full height */
+#root > * {
+  height: 100vh;
+}
+
+/* Remove any potential borders or outlines */
+*, *::before, *::after {
+  border: none !important;
+  outline: none !important;
+}
+
+/* Force full height layout */
+.h-screen, .h-full {
+  height: 100vh !important;
+  min-height: 100vh !important;
+}
+
+/* Remove any default spacing from flex containers */
+.flex {
+  gap: 0 !important;
+}
+
+/* Ensure no margin or padding on any element that could cause spacing */
+body > *, html > * {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* Custom scrollbar */
@@ -48,6 +130,25 @@ body {
 @keyframes slideIn {
   from { transform: translateY(20px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
+}
+
+/* Recharts label fixes */
+.recharts-cartesian-axis-tick text {
+  font-size: 11px !important;
+  fill: #374151 !important;
+}
+
+.recharts-wrapper {
+  overflow: visible !important;
+}
+
+.recharts-surface {
+  overflow: visible !important;
+}
+
+/* Ensure proper spacing for X-axis labels */
+.recharts-xAxis .recharts-cartesian-axis-tick {
+  transform-origin: center !important;
 }
 
 .chart-enter {

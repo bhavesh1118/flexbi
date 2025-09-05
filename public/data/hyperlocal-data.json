@@ -1,0 +1,126 @@
+[
+  {
+    "pincode": "110001",
+    "neighborhood": "Connaught Place",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "sales": 387853,
+    "impressions": 8395,
+    "conversions": 177,
+    "conversionRate": 2.11,
+    "avgOrderValue": 2191,
+    "productsSold": 177,
+    "topProducts": [
+      {
+        "name": "iPhone 15 Pro",
+        "sales": 125000,
+        "category": "Electronics"
+      },
+      {
+        "name": "MacBook Air M3",
+        "sales": 98000,
+        "category": "Electronics"
+      },
+      {
+        "name": "Nike Air Force 1",
+        "sales": 45000,
+        "category": "Fashion"
+      }
+    ],
+    "demographics": [
+      { "ageGroup": "18-25", "percentage": 22.5 },
+      { "ageGroup": "26-35", "percentage": 38.2 },
+      { "ageGroup": "36-45", "percentage": 24.1 },
+      { "ageGroup": "46-55", "percentage": 10.8 },
+      { "ageGroup": "55+", "percentage": 4.4 }
+    ],
+    "timeOfDay": [
+      { "hour": 0, "sales": 5200, "conversions": 3 },
+      { "hour": 1, "sales": 2600, "conversions": 1 },
+      { "hour": 2, "sales": 2600, "conversions": 1 },
+      { "hour": 3, "sales": 2600, "conversions": 1 },
+      { "hour": 4, "sales": 5200, "conversions": 3 },
+      { "hour": 5, "sales": 7800, "conversions": 4 },
+      { "hour": 6, "sales": 13000, "conversions": 7 },
+      { "hour": 7, "sales": 18200, "conversions": 9 },
+      { "hour": 8, "sales": 20800, "conversions": 11 },
+      { "hour": 9, "sales": 26000, "conversions": 13 },
+      { "hour": 10, "sales": 33800, "conversions": 17 },
+      { "hour": 11, "sales": 39000, "conversions": 20 },
+      { "hour": 12, "sales": 44200, "conversions": 23 },
+      { "hour": 13, "sales": 36400, "conversions": 19 },
+      { "hour": 14, "sales": 41600, "conversions": 21 },
+      { "hour": 15, "sales": 46800, "conversions": 24 },
+      { "hour": 16, "sales": 52000, "conversions": 27 },
+      { "hour": 17, "sales": 57200, "conversions": 29 },
+      { "hour": 18, "sales": 62400, "conversions": 32 },
+      { "hour": 19, "sales": 54600, "conversions": 28 },
+      { "hour": 20, "sales": 46800, "conversions": 24 },
+      { "hour": 21, "sales": 39000, "conversions": 20 },
+      { "hour": 22, "sales": 26000, "conversions": 13 },
+      { "hour": 23, "sales": 15600, "conversions": 8 }
+    ]
+  },
+  {
+    "pincode": "400001",
+    "neighborhood": "Fort",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "sales": 456780,
+    "impressions": 12450,
+    "conversions": 234,
+    "conversionRate": 1.88,
+    "avgOrderValue": 1952,
+    "productsSold": 234,
+    "topProducts": [
+      {
+        "name": "Samsung Galaxy S24",
+        "sales": 165000,
+        "category": "Electronics"
+      },
+      {
+        "name": "Sony WH-1000XM5",
+        "sales": 89000,
+        "category": "Electronics"
+      },
+      {
+        "name": "Levi's Jeans",
+        "sales": 56000,
+        "category": "Fashion"
+      }
+    ],
+    "demographics": [
+      { "ageGroup": "18-25", "percentage": 28.3 },
+      { "ageGroup": "26-35", "percentage": 35.7 },
+      { "ageGroup": "36-45", "percentage": 22.1 },
+      { "ageGroup": "46-55", "percentage": 9.2 },
+      { "ageGroup": "55+", "percentage": 4.7 }
+    ],
+    "timeOfDay": [
+      { "hour": 0, "sales": 6800, "conversions": 4 },
+      { "hour": 1, "sales": 3400, "conversions": 2 },
+      { "hour": 2, "sales": 3400, "conversions": 2 },
+      { "hour": 3, "sales": 3400, "conversions": 2 },
+      { "hour": 4, "sales": 6800, "conversions": 4 },
+      { "hour": 5, "sales": 10200, "conversions": 5 },
+      { "hour": 6, "sales": 17000, "conversions": 9 },
+      { "hour": 7, "sales": 23800, "conversions": 12 },
+      { "hour": 8, "sales": 27200, "conversions": 14 },
+      { "hour": 9, "sales": 34000, "conversions": 17 },
+      { "hour": 10, "sales": 44200, "conversions": 23 },
+      { "hour": 11, "sales": 51000, "conversions": 26 },
+      { "hour": 12, "sales": 57800, "conversions": 30 },
+      { "hour": 13, "sales": 47600, "conversions": 24 },
+      { "hour": 14, "sales": 54400, "conversions": 28 },
+      { "hour": 15, "sales": 61200, "conversions": 31 },
+      { "hour": 16, "sales": 68000, "conversions": 35 },
+      { "hour": 17, "sales": 74800, "conversions": 38 },
+      { "hour": 18, "sales": 81600, "conversions": 42 },
+      { "hour": 19, "sales": 71400, "conversions": 37 },
+      { "hour": 20, "sales": 61200, "conversions": 31 },
+      { "hour": 21, "sales": 51000, "conversions": 26 },
+      { "hour": 22, "sales": 34000, "conversions": 17 },
+      { "hour": 23, "sales": 20400, "conversions": 10 }
+    ]
+  }
+]

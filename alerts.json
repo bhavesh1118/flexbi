@@ -1,0 +1,16 @@
+[
+  {
+    "metric": "bhavesh",
+    "threshold": 3,
+    "direction": "below",
+    "period": "weekly",
+    "savedAt": "2025-07-21T21:54:31.363Z"
+  },
+  {
+    "metric": "bhavesh",
+    "threshold": -2,
+    "direction": "above",
+    "period": "weekly",
+    "savedAt": "2025-08-10T08:22:06.900Z"
+  }
+]

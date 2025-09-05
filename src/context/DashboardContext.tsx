@@ -3,6 +3,7 @@ import { Chart } from '../types';
 
 interface DashboardContextType {
   charts: Chart[];
+  setCharts: (charts: Chart[]) => void;
   addChart: (chart: Chart) => void;
   removeChart: (id: string) => void;
   updateChart: (id: string, chart: Partial<Chart>) => void;
@@ -42,7 +43,7 @@ export const DashboardProvider: React.FC<DashboardProviderProps> = ({ children }
   };
 
   return (
-    <DashboardContext.Provider value={{ charts, addChart, removeChart, updateChart }}>
+    <DashboardContext.Provider value={{ charts, setCharts, addChart, removeChart, updateChart }}>
       {children}
     </DashboardContext.Provider>
   );
